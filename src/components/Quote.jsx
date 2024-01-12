@@ -16,7 +16,7 @@ function Quote() {
 
             const result = await response.json();
             console.log(result.slip.advice)
-            setAdvice(result.slip.advice)
+            setAdvice('"'+result.slip.advice+'"')
             setAdviceId(result.slip.id)
       }
 
@@ -35,7 +35,7 @@ function Quote() {
       
 
       return (
-            <div class="quote_box flex2">
+            <div className="quote_box flex2">
                   <div className="quote_name flex">Quote #{adviceId}</div>
                   <div className="quote_content">{advice}</div>
                   <div className="quote_logo flex">

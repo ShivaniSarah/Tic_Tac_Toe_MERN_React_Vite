@@ -29,6 +29,7 @@ body{
 }
 
 .main-ui{
+  position: relative;
 width: 30vw;
 height: 85vh;
 background-color: #192a32;
@@ -57,14 +58,25 @@ margin-top: 7%;
   border-radius: 10px;
   
 }
-.logo_back{
-  background-color:  #D9D9D9;
+#O_img{
+  filter:invert(1);
+}
+.logo_back1{
+  /* background-color:  #D9D9D9; */
+  /* background-color: none; */
+  border-radius: 10px;
+  width:45%;
+  height: 67%;
+/* margin-left:15%; */
+}
+
+.logo_back2{
+  /* background-color:  #D9D9D9; */
   border-radius: 10px;
   width:45%;
   height: 67%;
 margin-left:15%;
 }
-
 .pick_player_text{
   font-family: DM Sans;
 font-size: 22px;
@@ -76,6 +88,7 @@ margin-bottom: 4%;
 }
 
 .new_game_cpu{
+  cursor: pointer;
   font-family: DM Sans;
   font-size: 14px;
   font-weight: 800;
@@ -101,8 +114,10 @@ background-color:  #32C4C3;
 height: 8%;
 margin-top: 5%;
 border-radius: 5px;
+
 }
 .invite{
+  cursor: pointer;
   font-family: DM Sans;
 font-size: 16px;
 font-weight: 800;
@@ -121,11 +136,11 @@ text-align: left;
 
 
 .quote_box{
-  position:absolute;
-  left:10vh;
+  position:fixed;
+  left:5vw;
   bottom:7vh;
   height: 35vh;
-  width:35vh;
+  width:22vw;
   /* border: 1px solid black; */
   background-color: #192a32;
   border-radius: 20px;
@@ -144,12 +159,12 @@ margin-top: 5%;
 
 .quote_content{
   font-family: DM Sans;
-font-size: 14px;
+font-size: 16px;
 font-weight: 800;
 line-height: 31px;
 letter-spacing: 0em;
 text-align: center;
-
+color:#F2B237;
   margin-top: 5%;
   text-align: center;
   padding: 0 20px;
@@ -169,7 +184,8 @@ text-align: center;
   height: 50%;
   width:80%;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 30% 30% 30%;
   /* background-color: #2196F3; */
   /* padding: 10px; */
   gap:5%;
@@ -259,4 +275,95 @@ letter-spacing: 0em;
 text-align: left;
 color: #A8BEC9;
 
+}
+
+.invite_link{
+  position:absolute;
+  right:0;
+  top:5vh;
+  height:7vh;
+  width:15vw;
+  /* text-align: center; */
+  font-family: DM Sans;
+font-size: 20px;
+font-weight: 800;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: center;
+color: #F2B237;
+background: #192A32;
+border-radius: 10px;
+
+}
+
+.refreshPopUp{
+  position: absolute;
+  /* border: 1px solid red; */
+  height: 32%;
+  width:100%;
+  z-index: 200;
+  background: #192A32;
+  ;
+  /* transform: translate(50%, 50%); */
+}
+
+.do_you_text{
+  font-family: DM Sans;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #F2B237;
+
+}
+
+.play_again_button{
+  height:5vh;
+  width:8vw;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+color:#192A32;
+background: #31C4BE;
+margin: 2vw;
+border-radius: 10px;
+  
+}
+.quit_button{
+  height:5vh;
+  width:8vw;
+  font-family: DM Sans;
+font-size: 15px;
+font-weight: 800;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+color: #192A32;
+
+  background: #F2B237;
+  margin: 2vw;
+  border-radius: 10px;
+}
+.nextRoundPopUp{
+  position: absolute;
+  /* border: 1px solid red; */
+  height: 32%;
+  width:100%;
+  z-index: 200;
+  background: #192A32;
+  ;
+}
+.takes_round_text{
+  font-family: DM Sans;
+font-size: 28px;
+font-weight: 800;
+line-height: 36px;
+letter-spacing: 0em;
+text-align: center;
+color: #F2B237;
+margin-left: 1vw;
 }
